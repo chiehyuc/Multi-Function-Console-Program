@@ -2,9 +2,16 @@ ONE_POUND_TO_KG = 0.45359237
 ONE_FT_TO_INCHES = 12
 ML_WATER_PER_KG_WEIGHT = 35
 
-import math
 
 def main():
+
+    """ 
+    This is a multi-function program where the user can prompt to run one of the programs at a time.
+    Valid inputs are 1, 2, 3, 4, when the user prompts an invalid input, the console prompts the user to enter a valid input again
+    until a valid input is entered by the user.
+    The user can enter 4 when the user wishes to terminate the entire program.
+    """
+
     print("Hello there, this is a multi-function program that can do 3 things: ")
     print("1. Calculate and check if your BMI is normal")
     print("2. Check if your blood pressure is normal")
@@ -33,6 +40,14 @@ def main():
 
 
 def my_bmi_app():
+
+    """ 
+    This is the first small program that can be run in this multi-function program.
+    This function calculates the user's bmi given weight and height in given units.
+    The calculator also shows if the user is underweight, normal or overweight.
+    If the user is underweight or overweight, the program suggests the amount of weight to gain or lose accordingly to go back to the normal BMI range.
+    """
+
     # print("\n")
     print("\n*****************************************************")
     print("Welcome! This is a BMI calculator!")
@@ -75,6 +90,12 @@ def bmi_calculator(weight, height):
     return round(bmi_value, 2)
 
 def bmi_range(weight, height, bmi_value):
+
+    """ 
+    I thought the BMI range would be different for different genders and age groups,
+    could implement this if found reliable source indicating the range for different gender and/or age groups. 
+    """
+    
     # gender = input("Are you male or female? ")
     # while (gender != 'male') and (gender != 'female'):
     #     print("You input is invalid.")
@@ -123,6 +144,13 @@ def normal_upper_lower_weight(weight, height):
 
 
 def my_blood_pressure_app():
+
+    """
+    This function prompts the user to input blood pressure data and checks if the user's blood pressure is in the normal range.
+    If not, then warning messages would be shown on the screen.
+    If the blood pressure is in the normal range, a message indicating that would be shown on the screen.
+    """
+    
     # print("\n")
     print("\n*****************************************************")
     print("Welcome! This program checks if your blood pressure is normal")
@@ -147,6 +175,11 @@ def my_blood_pressure_app():
 
 
 def water_checker_app():
+    """
+    This program prompts the user to enter his or her weight and calculates the least amount of daily water intake based on the weight.
+    It prompts the user for the unit and the size of the water bottle and shows the number of bottles the user should drink each day
+    based on his or her weight.
+    """
     # print("\n")
     print("\n*****************************************************")
     print("Welcome! This is your daily water intake calculator!")

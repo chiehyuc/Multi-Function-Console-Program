@@ -204,7 +204,10 @@ def water_checker_app():
         bottle_of_water_per_day = water_amount_in_ml/bottle_size
     bottle_of_water_per_day = round(bottle_of_water_per_day + 0.4)
     # print("\n")
-    print("\nYou have to drink " + str(bottle_of_water_per_day) + " bottles of water per day! :)\n")
+    if (bottle_of_water_per_day == 1):
+        print("\nYou have to drink " + str(bottle_of_water_per_day) + " bottle of water per day! :)\n")
+    else:
+        print("\nYou have to drink " + str(bottle_of_water_per_day) + " bottles of water per day! :)\n")
 
 if __name__ == "__main__":
     main()

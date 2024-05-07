@@ -4,8 +4,10 @@ Hello there! This is the final project written for code in place 2024.
 
 I was originally thinking about altering it so that it can be deployed as a web application, but did not figure out how to do so (yet), if you have any ideas or suggestions, please do not hesitate to reach out!! I eagerly want to know more about producing and deploying web applications other than writing console programs!
 
-*update!* I successfully made it into a web application!! The complete codes for the web app are in this repo: https://github.com/chiehyuc/Multi-Function-Web-Application.git
-I will try to deploy it using *pythonanywhere*, we will see how it goes! :)
+**May 7th 2024 update!** 
+*I successfully made it into a web application!! 
+The complete codes for the web app are in this repo: https://github.com/chiehyuc/Multi-Function-Web-Application.git
+I will try to deploy it using pythonanywhere, we will see how it goes! :)*
 
 This is a **multi-function program** that does *3 things*:
 
